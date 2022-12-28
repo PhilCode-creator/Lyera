@@ -1,6 +1,7 @@
 package eu.lyera.bungee;
 
 import eu.lyera.bungee.command.Command_Find;
+import eu.lyera.bungee.command.Command_GlobalChatClear;
 import eu.lyera.bungee.command.Command_JumpTo;
 import eu.lyera.bungee.report.Report;
 import eu.lyera.bungee.teamchat.Command_TeamChat;
@@ -46,6 +47,7 @@ public class BungeeSystem extends Plugin {
         pluginManager.registerCommand(this, new Command_Find("find"));
         pluginManager.registerCommand(this, new Command_JumpTo("jumpto"));
         pluginManager.registerCommand(this, new Command_TeamChat("teamchat"));
+        pluginManager.registerCommand(this, new Command_GlobalChatClear("gcc"));
     }
 
     @Override
